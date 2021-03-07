@@ -22,4 +22,152 @@ body {
   line-height: 1.5;
   background-color: var(--red);
   background-image: url(./images/bg-intro-desktop.png);
+  color: white;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+
+h1 {
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  line-height: 1.1;
+}
+
+p {
+  font-weight: 400;
+  max-width: 50rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  background-color: var(--green);
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  width: 100%;
+  display: block;
+  box-shadow: 0px 5px 0px rgba(37, 139, 95, 0.8);
+  margin-bottom: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-top: 12rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  margin-bottom: 6.5rem;
+}
+
+.left {
+  flex: 1;
+  flex-basis: 50rem;
+}
+
+.right {
+  flex: 1;
+  flex-basis: 50rem;
+}
+.right h2 {
+  text-align: center;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  width: 100%;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+}
+
+.right h2 span {
+  font-weight: 700;
+}
+
+.form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 4rem;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-control input {
+  padding: 2rem;
+  width: 100%;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--grayishBlue);
+  border-radius: 5px;
+  color: black;
+  font-weight: 600;
+  display: block;
+}
+
+.form-control small {
+  color: var(--red);
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  visibility: hidden;
+}
+
+.form-control.error input {
+  border-color: red;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control.error::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  z-index: 5;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: var(--darkBlues);
+}
+
+.form .terms {
+  color: var(--grayishBlue);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.form .terms span {
+  color: var(--red);
 }

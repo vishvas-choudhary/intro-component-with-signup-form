@@ -171,3 +171,29 @@ button:hover {
 .form .terms span {
   color: var(--red);
 }
+
+@media screen and (max-width: 1040px) {
+  h1 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .right h2 {
+    padding: 2rem 5rem;
+    line-height: 1.6;
+  }
+
+  .container {
+    margin-top: 9rem;
+  }
+
+  .form {
+    padding: 3rem;
+  }
+}
